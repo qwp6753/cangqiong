@@ -42,3 +42,8 @@ sky:
     bucket-name: ${sky.alioss.bucket-name}
     access-key-id: ${sky.alioss.access-key-id}
     access-key-secret: ${sky.alioss.access-key-secret}
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true # 开启分页合理化，pageNum > pages 时自动查询最后一页
+  support-methods-arguments: true
+  params: count=countSql
